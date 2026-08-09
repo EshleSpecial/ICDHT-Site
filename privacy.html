@@ -1,3 +1,6 @@
+
+
+Privacy · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,153 +21,52 @@
   --text-2:#a8bdd4;
   --text-3:#7a95b8;
   --hairline:rgba(255,255,255,.08);
-
   --display:"Barlow Condensed",system-ui,sans-serif;
   --body:"Barlow",system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
-
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--body);
-  font-size:17px;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(242,128,60,.35)}
 a:hover{border-bottom-color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
-
 .wrap{max-width:820px;margin:0 auto;padding:0 24px}
-
-.masthead{
-  padding:28px 0;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:14px;
-}
-.mark{
-  font-family:var(--display);
-  font-weight:700;
-  font-size:20px;
-  letter-spacing:.22em;
-  color:var(--text-2);
-  border-bottom:none;
-}
+.masthead{padding:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.mark{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.22em;color:var(--text-2);border-bottom:none}
 .mark:hover{color:var(--text)}
-.sitenav{
-  display:flex;
-  gap:24px;
-  font-family:var(--mono);
-  font-size:12px;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-}
-.sitenav a{
-  color:var(--text-3);
-  border-bottom:1px solid transparent;
-}
-.sitenav a:hover,
-.sitenav a[aria-current="page"]{
-  color:var(--accent);
-  border-bottom-color:var(--accent);
-}
-
+.sitenav{display:flex;gap:24px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.sitenav a{color:var(--text-3);border-bottom:1px solid transparent}
+.sitenav a:hover,.sitenav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
 .legal-hero{padding:20px 0 8px}
-.eyebrow{
-  font-family:var(--mono);
-  font-size:12px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin:0 0 18px;
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 18px;display:flex;align-items:center;gap:14px}
 .eyebrow::after{content:"";flex:1;height:1px;background:var(--hairline)}
-
-h1.doctitle{
-  font-family:var(--display);
-  font-weight:700;
-  font-size:clamp(38px,7vw,58px);
-  line-height:.98;
-  letter-spacing:-.01em;
-  margin:0 0 10px;
-  text-transform:uppercase;
-}
-.updated{
-  font-family:var(--mono);
-  font-size:12.5px;
-  color:var(--text-3);
-  letter-spacing:.04em;
-  margin:0 0 8px;
-}
-.entity-line{
-  color:var(--text-2);
-  max-width:40em;
-  margin:18px 0 0;
-}
-
-.placeholder-note{
-  margin:36px 0 0;
-  background:var(--surface);
-  border:1px solid var(--hairline);
-  border-left:3px solid var(--accent);
-  border-radius:14px;
-  padding:24px 28px;
-  color:var(--text-2);
-  font-size:15.5px;
-}
-.placeholder-note strong{color:var(--text)}
-
+h1.doctitle{font-family:var(--display);font-weight:700;font-size:clamp(38px,7vw,58px);line-height:.98;letter-spacing:-.01em;margin:0 0 10px;text-transform:uppercase}
+.updated{font-family:var(--mono);font-size:12.5px;color:var(--text-3);letter-spacing:.04em;margin:0 0 8px}
+.entity-line{color:var(--text-2);max-width:44em;margin:18px 0 0}
 .legal-body{padding:44px 0 0}
-.legal-body h2{
-  font-family:var(--display);
-  font-weight:600;
-  font-size:24px;
-  letter-spacing:.03em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin:0 0 12px;
-  padding-top:34px;
-  border-top:1px solid var(--hairline);
-}
-.legal-body section:first-of-type h2{border-top:none;padding-top:0}
+.legal-body h2{font-family:var(--display);font-weight:600;font-size:23px;letter-spacing:.03em;text-transform:uppercase;color:var(--accent);margin:0 0 14px;padding-top:34px;border-top:1px solid var(--hairline)}
+.legal-body h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.02em;color:var(--text);margin:26px 0 10px}
 .legal-body p{color:var(--text-2);margin:0 0 14px}
 .legal-body ul{color:var(--text-2);margin:0 0 14px;padding-left:22px}
-.legal-body li{margin:0 0 6px}
-.toplaceholder{
-  color:var(--text-3);
-  font-style:italic;
-}
-
-footer{
-  margin-top:72px;
-  padding:30px 0 56px;
-  border-top:1px solid var(--hairline);
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px 26px;
-  align-items:baseline;
-  font-size:14.5px;
-  color:var(--text-3);
-}
+.legal-body li{margin:0 0 8px}
+.legal-body strong{color:var(--text)}
+.legal-body code{font-family:var(--mono);font-size:14px;background:var(--surface);padding:1px 6px;border-radius:4px;color:var(--text)}
+.legal-body table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.legal-body th{text-align:left;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--hairline);padding:8px 10px 8px 0}
+.legal-body td{vertical-align:top;color:var(--text-2);border-bottom:1px solid var(--hairline);padding:12px 10px 12px 0}
+footer{margin-top:72px;padding:30px 0 56px;border-top:1px solid var(--hairline);display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline;font-size:14.5px;color:var(--text-3)}
 footer a{color:var(--text-2);border-bottom-color:var(--hairline)}
 footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .legal{margin-right:auto}
-
 @media (max-width:640px){
   body{font-size:16px}
   .masthead{padding:22px 0}
   .sitenav{gap:16px}
-  .placeholder-note{padding:20px}
+  .legal-body table,.legal-body thead{display:block}
+  .legal-body tr{display:block;padding:14px 0;border-bottom:1px solid var(--hairline)}
+  .legal-body td,.legal-body th{display:block;border:none;padding:2px 0}
+  .legal-body th{padding-top:10px}
 }
 </style>
 </head>
@@ -179,61 +81,121 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
       <a href="/health-data-privacy.html">Health Data</a>
     </nav>
   </header>
-
+ 
   <section class="legal-hero">
     <p class="eyebrow">Legal</p>
     <h1 class="doctitle">Privacy Policy</h1>
-    <p class="updated">Effective date: [TO BE ADDED] &nbsp;·&nbsp; Last updated: [TO BE ADDED]</p>
+    <p class="updated">Effective date: 09 August 2026 &nbsp;·&nbsp; Last updated: 09 August 2026 </p>
     <p class="entity-line">I Can Do Hard Things, LLC, a Florida limited liability company (&ldquo;ICDHT,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;).</p>
   </section>
-
-  <div class="placeholder-note">
-    <strong>Placeholder page.</strong> This page is a structural stand-in styled to match the site. The reviewed legal text will be dropped into the sections below once finalized.
-  </div>
-
+ 
   <div class="legal-body">
-    <section>
-      <h2 style="border-top:none;padding-top:0">1. Overview</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted. Notes the app's zero-backend, on-device architecture.</p>
-    </section>
-    <section>
-      <h2>2. Information We Collect</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>3. Apple HealthKit</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>4. Strava Integration</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted. Read-only import only.</p>
-    </section>
-    <section>
-      <h2>5. Third-Party Services</h2>
-      <p class="toplaceholder">Placeholder — Open-Elevation, RunSignup lookups; no identifying info sent.</p>
-    </section>
-    <section>
-      <h2>6. Data Storage and Security</h2>
-      <p class="toplaceholder">Placeholder — local device storage (AsyncStorage), no servers or accounts.</p>
-    </section>
-    <section>
-      <h2>7. Your Choices and Data Deletion</h2>
-      <p class="toplaceholder">Placeholder — describes in-app Delete All Data control.</p>
-    </section>
-    <section>
-      <h2>8. Children's Privacy</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>9. Changes to This Policy</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>10. Contact</h2>
-      <p class="toplaceholder">Placeholder — Support@icandohardthings.fit</p>
-    </section>
+<p>This Privacy Policy explains how <strong>I Can Do Hard Things LLC (“ICDHT,” “we,” “us”)</strong> handles information in the ICDHT iOS app.</p>
+<p>Health and fitness information is covered by a separate document, the <strong>ICDHT Consumer Health Data Privacy Policy</strong>, as required by applicable state regulations. Please read both. That policy is a separate document at https://icandohardthings.fit/health-data-privacy.html, linked on its own from the site footer, the App Store listing, and inside the app.</p>
+<h2 style="border-top:none;padding-top:0" id="the-short-version">1. The Short Version</h2>
+<p>ICDHT has no servers, no backend, and no user accounts. Everything you enter and everything the app records stays locally on your iPhone. We cannot see your data because it is never sent to us. We do not sell your data, do not show ads, and do not use analytics or tracking SDKs.</p>
+<p>Your data leaves your device only when you choose to send it: connecting Strava, authorizing Apple Health, or searching for a race.</p>
+<h2 id="information-the-app-stores-on-your-device">2. Information the App Stores on Your Device</h2>
+<ul>
+<li><strong>Profile information</strong> you provide during onboarding — your name, goal type, target races, training start date, pace, terrain preference, training days, weekly mileage, blocked dates, and any injury flags you enter</li>
+<li><strong>Your training plan</strong> and its adaptations over time</li>
+<li><strong>Workout and run records</strong> — completed workouts, effort and feeling ratings, manually logged runs, and GPS-tracked runs including coordinates, routes, pace, distance, and elevation</li>
+<li><strong>Recovery and physical-therapy exercise logs</strong></li>
+<li><strong>Streak data</strong> and cumulative training summaries</li>
+<li><strong>App state</strong>, such as the date you last opened the app, used to rebuild your weekly plan</li>
+<li><strong>A Strava authorization token</strong>, if you connect Strava</li>
+<li><strong>Calendar events</strong>, if you export your training plan to your device's calendar. ICDHT creates a dedicated "I Can Do Hard Things" calendar and writes workout entries to it; these events are stored by iOS in the Calendar app, not by ICDHT, and are updated or removed automatically when your plan rebuilds</li>
+</ul>
+<p>All of this is stored in the app’s local storage (<code>AsyncStorage</code>) on your device. It is not transmitted to ICDHT, and no ICDHT server exists to receive it.</p>
+<p>Heart rate is planned, not yet collected. I Can Do Hard Things LLC will add heart rate as a collected category, and obtain any renewed authorization, before the Zone 2 feature ships.</p>
+<p>The health, fitness, and precise-location categories listed above are also Consumer Health Data. Those categories are governed by the separate ICDHT Consumer Health Data Privacy Policy.</p>
+<h2 id="information-we-do-not-collect">3. Information We Do Not Collect</h2>
+<ul>
+<li>We do not require or offer an account, username, or password.</li>
+<li>We do not collect your email address, phone number, or contacts.</li>
+<li>We do not use analytics, crash-reporting, advertising, or attribution SDKs.</li>
+<li>We do not track you across third-party apps or websites, and we do not permit anyone else to.</li>
+<li>We do not sell your personal information, and we do not share it for cross-context behavioral advertising.</li>
+</ul>
+<p><strong>Do Not Track.</strong> I Can Do Hard Things LLC does not track users across third-party websites or services over time, and does not respond to browser or platform Do Not Track signals, because the app performs no such tracking. No third party collects personally identifiable information through the app across sites over time.</p>
+<h2 id="third-party-services">4. Third-Party Services</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 39%" />
+<col style="width: 24%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>What is sent</th>
+<th>When</th>
+<th>Their policy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Strava, Inc.</strong></td>
+<td><strong>Import:</strong> runs you have recorded on Strava are read into the app so they can be matched to your plan. <strong>Export (planned, not yet built):</strong> you enable it, runs you log inside ICDHT (GPS, manual, or treadmill) — distance, duration, pace, route/coordinates, elevation — are sent to your Strava account.</td>
+<td>Import happens automatically once you connect Strava. When export ships, it happens, or if you turn on automatic export in settings.</td>
+<td><a href="https://strava.com">Strava Privacy Policy</a></td>
+</tr>
+<tr class="even">
+<td><strong>Apple, Inc. (HealthKit)</strong></td>
+<td>Workout records — distance, duration, pace, calories</td>
+<td>Only where you have authorized Health access. HealthKit is an on-device framework; data stays under your control on your device.</td>
+<td><a href="https://apple.com">Apple Privacy Policy</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Open-Elevation</strong></td>
+<td>Latitude and longitude only, with no name, account, or identifier attached</td>
+<td>When elevation or terrain is looked up for a race location or run route</td>
+<td><a href="https://open-elevation.com">Open-Elevation</a></td>
+</tr>
+<tr class="even">
+<td><strong>RunSignup</strong></td>
+<td>Your race search query, such as a race name or location. No personal or health data is sent.</td>
+<td>When you search for a race</td>
+<td><a href="https://runsignup.com">RunSignup Privacy Policy</a></td>
+</tr>
+</tbody>
+</table>
+<p>Once your data reaches Strava or Apple Health, it is governed by that company’s privacy policy rather than this one.</p>
+<p>Active contact for each service: Strava, Inc. (https://support.strava.com), Apple, Inc. (https://privacy.apple.com), Open-Elevation (https://github.com/Jorl17/open-elevation), and RunSignup (info@runsignup.com).</p>
+<p><strong>Apple App Store.</strong> ICDHT is free to download and includes a 7-day free trial. After the trial, continued use of the core app requires a one-time $9.99 purchase. A separate, optional Pro subscription may be offered for additional features. All purchases are transactions between you and Apple, which handles payment and provides us only aggregate, anonymized sales information. We never receive your payment details. Trial eligibility is tracked through a purchase record linked to your Apple ID, a $0 non-consumable Trial purchase, so reinstalling does not grant a second trial on the same account. This is account-identity information, not health data.</p>
+<h2 id="location">5. Location</h2>
+<p>ICDHT requests location permission so it can track your runs. Location is collected only while a run is active, including in the background while a run is in progress, so that your route continues recording when your screen is off. Location data is stored on your device and is sent off-device only to Strava (if you sync a run) and, as bare coordinates with no identifier, to Open-Elevation for terrain lookups.</p>
+<p>You can revoke location access at any time in <strong>iOS Settings → Privacy &amp; Security → Location Services → ICDHT</strong>. Revoking it stops all location collection immediately; run tracking will no longer function.</p>
+<p><strong>Calendar.</strong> If you export your training plan to your device's calendar, ICDHT requests calendar permission and creates a dedicated "I Can Do Hard Things" calendar containing your workout entries. This uses Apple's on-device EventKit framework; calendar events are stored by iOS, not by ICDHT. Existing ICDHT events are deleted and re-created when your plan rebuilds so your calendar stays current. You can revoke calendar access at any time in iOS Settings → Privacy &amp; Security → Calendars → ICDHT, or remove the "I Can Do Hard Things" calendar directly in the Calendar app.</p>
+<h2 id="your-choices-and-controls">6. Your Choices and Controls</h2>
+<ul>
+<li><strong>See your data.</strong> Everything the app stores is visible in the app interface.</li>
+<li><strong>Turn off Location.</strong> iOS Settings → Privacy &amp; Security → Location Services → ICDHT.</li>
+<li><strong>Turn off Health access.</strong> iOS Settings → Health → Data Access &amp; Devices → ICDHT.</li>
+<li><strong>Turn off Calendar access.</strong> iOS Settings → Privacy &amp; Security → Calendars → ICDHT.</li>
+<li><strong>Disconnect Strava.</strong> In the app settings, and additionally by revoking ICDHT in your Strava account settings. Disconnecting stops both import and export immediately.</li>
+<li><strong>Turn off Strava export specifically.</strong> Once export ships, if you want to keep importing Strava runs but stop sending ICDHT-logged runs to Strava, you can disable export separately in app settings without disconnecting Strava entirely.</li>
+<li><strong>Delete everything.</strong> Use <strong>Settings → Delete All My Data</strong> in the app. This permanently erases your profile, training plan, workout and run history, GPS routes, exercise log, streak data, and Strava authorization from your device. Deleting the ICDHT app has the same effect. Neither action can be undone by us, because we hold no copy.</li>
+<li><strong>Delete data already synced elsewhere.</strong> Runs synced to Strava must be deleted in Strava. Workouts written to Apple Health must be deleted in the Health app.</li>
+</ul>
+<h2 id="data-security">7. Data Security</h2>
+<p>Your data is protected by your device’s own security — your passcode or Face ID, iOS file-level encryption, and the iOS application sandbox, which prevents other apps from reading ICDHT’s data. All communication with third-party services occurs over encrypted HTTPS/TLS connections. Because ICDHT operates no servers and holds no copy of your data, there is no central database that could be breached.</p>
+<h2 id="data-retention">8. Data Retention</h2>
+<p>Your data remains on your device for as long as you keep the app installed and choose to keep it. We retain nothing, because we receive nothing.</p>
+<h2 id="childrens-privacy">9. Children’s Privacy</h2>
+<p>The App is for users 18 and older, or users 13 to 17 with the consent and supervision of a parent or legal guardian who agrees to the Terms of Service on their behalf. ICDHT is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided personal information through the app, contact us at Support@icandohardthings.fit. Because all data is stored locally, deleting the app removes it entirely.</p>
+<h2 id="your-rights-under-state-and-regional-privacy-laws">10. Your Rights Under State and Regional Privacy Laws</h2>
+<p>I Can Do Hard Things LLC honors the following rights to the extent the law applies to it. Depending on where you live, you may have rights to access, correct, delete, or port your personal information, and to opt out of sale or targeted advertising.</p>
+<p>ICDHT does not sell personal information, does not share it for targeted advertising, and does not engage in profiling with legal or similarly significant effects. Because your information never leaves your device except as described in Section 4, you can exercise your access, correction, and deletion rights directly in the app at any time — no request to us is required.</p>
+<p>If you would like to make a formal request, or you believe a right has not been honored, contact <strong>Support@icandohardthings.fit</strong>. We will respond within the period required by applicable law.</p>
+<p>Washington residents: see the separate <strong>ICDHT Consumer Health Data Privacy Policy</strong> for rights specific to consumer health data under RCW 19.373.</p>
+<h2 id="changes-to-this-policy">11. Changes to This Policy</h2>
+<p>If we make material changes, we will update the “Last Updated” date above and, where required, notify you in the app.</p>
+<h2 id="contact">12. Contact</h2>
+<p><strong>Support@icandohardthings.fit</strong></p>
   </div>
-
+ 
   <footer>
     <span class="legal">&copy; 2026 I Can Do Hard Things, LLC</span>
     <a href="/terms.html">Terms of service</a>
@@ -244,3 +206,4 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 </div>
 </body>
 </html>
+ 
