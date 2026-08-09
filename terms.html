@@ -18,153 +18,52 @@
   --text-2:#a8bdd4;
   --text-3:#7a95b8;
   --hairline:rgba(255,255,255,.08);
-
   --display:"Barlow Condensed",system-ui,sans-serif;
   --body:"Barlow",system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
-
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--body);
-  font-size:17px;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(242,128,60,.35)}
 a:hover{border-bottom-color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
-
 .wrap{max-width:820px;margin:0 auto;padding:0 24px}
-
-.masthead{
-  padding:28px 0;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:14px;
-}
-.mark{
-  font-family:var(--display);
-  font-weight:700;
-  font-size:20px;
-  letter-spacing:.22em;
-  color:var(--text-2);
-  border-bottom:none;
-}
+.masthead{padding:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.mark{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.22em;color:var(--text-2);border-bottom:none}
 .mark:hover{color:var(--text)}
-.sitenav{
-  display:flex;
-  gap:24px;
-  font-family:var(--mono);
-  font-size:12px;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-}
-.sitenav a{
-  color:var(--text-3);
-  border-bottom:1px solid transparent;
-}
-.sitenav a:hover,
-.sitenav a[aria-current="page"]{
-  color:var(--accent);
-  border-bottom-color:var(--accent);
-}
-
+.sitenav{display:flex;gap:24px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.sitenav a{color:var(--text-3);border-bottom:1px solid transparent}
+.sitenav a:hover,.sitenav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
 .legal-hero{padding:20px 0 8px}
-.eyebrow{
-  font-family:var(--mono);
-  font-size:12px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin:0 0 18px;
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 18px;display:flex;align-items:center;gap:14px}
 .eyebrow::after{content:"";flex:1;height:1px;background:var(--hairline)}
-
-h1.doctitle{
-  font-family:var(--display);
-  font-weight:700;
-  font-size:clamp(38px,7vw,58px);
-  line-height:.98;
-  letter-spacing:-.01em;
-  margin:0 0 10px;
-  text-transform:uppercase;
-}
-.updated{
-  font-family:var(--mono);
-  font-size:12.5px;
-  color:var(--text-3);
-  letter-spacing:.04em;
-  margin:0 0 8px;
-}
-.entity-line{
-  color:var(--text-2);
-  max-width:40em;
-  margin:18px 0 0;
-}
-
-.placeholder-note{
-  margin:36px 0 0;
-  background:var(--surface);
-  border:1px solid var(--hairline);
-  border-left:3px solid var(--accent);
-  border-radius:14px;
-  padding:24px 28px;
-  color:var(--text-2);
-  font-size:15.5px;
-}
-.placeholder-note strong{color:var(--text)}
-
+h1.doctitle{font-family:var(--display);font-weight:700;font-size:clamp(38px,7vw,58px);line-height:.98;letter-spacing:-.01em;margin:0 0 10px;text-transform:uppercase}
+.updated{font-family:var(--mono);font-size:12.5px;color:var(--text-3);letter-spacing:.04em;margin:0 0 8px}
+.entity-line{color:var(--text-2);max-width:44em;margin:18px 0 0}
 .legal-body{padding:44px 0 0}
-.legal-body h2{
-  font-family:var(--display);
-  font-weight:600;
-  font-size:24px;
-  letter-spacing:.03em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin:0 0 12px;
-  padding-top:34px;
-  border-top:1px solid var(--hairline);
-}
-.legal-body section:first-of-type h2{border-top:none;padding-top:0}
+.legal-body h2{font-family:var(--display);font-weight:600;font-size:23px;letter-spacing:.03em;text-transform:uppercase;color:var(--accent);margin:0 0 14px;padding-top:34px;border-top:1px solid var(--hairline)}
+.legal-body h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.02em;color:var(--text);margin:26px 0 10px}
 .legal-body p{color:var(--text-2);margin:0 0 14px}
 .legal-body ul{color:var(--text-2);margin:0 0 14px;padding-left:22px}
-.legal-body li{margin:0 0 6px}
-.toplaceholder{
-  color:var(--text-3);
-  font-style:italic;
-}
-
-footer{
-  margin-top:72px;
-  padding:30px 0 56px;
-  border-top:1px solid var(--hairline);
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px 26px;
-  align-items:baseline;
-  font-size:14.5px;
-  color:var(--text-3);
-}
+.legal-body li{margin:0 0 8px}
+.legal-body strong{color:var(--text)}
+.legal-body code{font-family:var(--mono);font-size:14px;background:var(--surface);padding:1px 6px;border-radius:4px;color:var(--text)}
+.legal-body table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.legal-body th{text-align:left;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--hairline);padding:8px 10px 8px 0}
+.legal-body td{vertical-align:top;color:var(--text-2);border-bottom:1px solid var(--hairline);padding:12px 10px 12px 0}
+footer{margin-top:72px;padding:30px 0 56px;border-top:1px solid var(--hairline);display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline;font-size:14.5px;color:var(--text-3)}
 footer a{color:var(--text-2);border-bottom-color:var(--hairline)}
 footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .legal{margin-right:auto}
-
 @media (max-width:640px){
   body{font-size:16px}
   .masthead{padding:22px 0}
   .sitenav{gap:16px}
-  .placeholder-note{padding:20px}
+  .legal-body table,.legal-body thead{display:block}
+  .legal-body tr{display:block;padding:14px 0;border-bottom:1px solid var(--hairline)}
+  .legal-body td,.legal-body th{display:block;border:none;padding:2px 0}
+  .legal-body th{padding-top:10px}
 }
 </style>
 </head>
@@ -183,55 +82,80 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   <section class="legal-hero">
     <p class="eyebrow">Legal</p>
     <h1 class="doctitle">Terms of Service</h1>
-    <p class="updated">Effective date: [TO BE ADDED] &nbsp;·&nbsp; Last updated: [TO BE ADDED]</p>
+    <p class="updated">Effective date: 09 August 2026 &nbsp;·&nbsp; Last updated: 09 August 2026 </p>
     <p class="entity-line">I Can Do Hard Things, LLC, a Florida limited liability company (&ldquo;ICDHT,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;).</p>
   </section>
 
-  <div class="placeholder-note">
-    <strong>Placeholder page.</strong> This page is a structural stand-in styled to match the site. The reviewed legal text will be dropped into the sections below once finalized.
-  </div>
-
   <div class="legal-body">
-    <section>
-      <h2 style="border-top:none;padding-top:0">1. Acceptance of Terms</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>2. The App and License</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>3. Purchases and Subscriptions</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>4. Acceptable Use</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>5. Health and Fitness Disclaimer</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>6. Disclaimers and Limitation of Liability</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>7. Dispute Resolution / Arbitration</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>8. Governing Law and Venue</h2>
-      <p class="toplaceholder">Placeholder — Florida; exclusive venue Duval County, Jacksonville.</p>
-    </section>
-    <section>
-      <h2>9. Changes to These Terms</h2>
-      <p class="toplaceholder">Placeholder — attorney-reviewed text to be inserted.</p>
-    </section>
-    <section>
-      <h2>10. Contact</h2>
-      <p class="toplaceholder">Placeholder — Support@icandohardthings.fit</p>
-    </section>
+<h2 style="border-top:none;padding-top:0" id="agreement-to-these-terms">1. Agreement to These Terms</h2>
+<p>These Terms of Service (“Terms”) are a binding agreement between you and <strong>I Can Do Hard Things LLC</strong>, the developer of the <strong>I Can Do Hard Things</strong> mobile application (“ICDHT,” the “App,” “we,” “us”).</p>
+<p>By downloading, installing, or using the App, you agree to these Terms. If you do not agree, do not use the App and delete it from your device. The App also presents these Terms on first launch and asks you to tap Accept before you can use the App, and your acceptance at that screen confirms this agreement.</p>
+<p>Your privacy is addressed in the <strong>ICDHT Privacy Policy</strong> (https://icandohardthings.fit/privacy.html) and the <strong>ICDHT Consumer Health Data Privacy Policy</strong> (https://icandohardthings.fit/health-data-privacy.html), which are separate documents.</p>
+<h2 id="eligibility">2. Eligibility</h2>
+<p>You must be <strong>18 or older</strong> to use ICDHT. If you are between 13 and 17, you may use the App only if a parent or legal guardian reviews these Terms, agrees to be bound by them, and supervises your use. The parent or legal guardian accepts these Terms on the minor's behalf and takes responsibility for the minor's use of the App. The App is not intended for children under 13.</p>
+<h2 id="what-icdht-is-and-what-it-is-not">3. What ICDHT Is — and What It Is Not</h2>
+<p>ICDHT generates training plans and related guidance using a custom algorithm applied to information you provide. It is a <strong>general fitness and informational tool</strong>.</p>
+<p><strong>ICDHT is not:</strong> a medical device, and has not been evaluated or cleared by the U.S. Food and Drug Administration; a provider of medical advice, diagnosis, or treatment; a substitute for a physician, physical therapist, athletic trainer, or medical coach; a monitoring or safety service, and it will not detect, warn you of, or respond to a medical emergency.</p>
+<p><strong>ICDHT does not know your medical history.</strong> It generates plans from the limited information you enter. It cannot account for conditions it has not been told about, and it cannot evaluate whether any activity is appropriate for you.</p>
+<h2 id="medical-disclaimer-read-this">4. MEDICAL DISCLAIMER — READ THIS</h2>
+<p><strong>CONSULT A PHYSICIAN BEFORE BEGINNING ANY TRAINING PROGRAM, INCLUDING ONE GENERATED BY THIS APP.</strong> This is especially important if you have or have had a heart condition, high blood pressure, diabetes, asthma, a musculoskeletal injury, or any chronic condition; if you are pregnant or postpartum; if you take medication that affects heart rate or hydration; or if you have been previously inactive.</p>
+<p>All content in the App, including training plans, workouts, pace targets, mileage progressions, injury-appropriate exercises, warmups, and cooldowns, is <strong>informational only</strong>. It is not a prescription, a treatment plan, or a clinical recommendation, and no practitioner-patient relationship is created by your use of the App.</p>
+<p><strong>Stop exercising immediately and seek medical attention</strong> if you experience chest pain or pressure, shortness of breath disproportionate to your effort, dizziness or faintness, irregular heartbeat, confusion, or sudden or severe pain.</p>
+<p><strong>Follow your doctor over this App.</strong> If any guidance in the App conflicts with the advice of a qualified healthcare professional, follow the professional. Never disregard or delay seeking professional medical advice because of something you read in the App.</p>
+<h2 id="injury-and-physical-therapy-content">4.1 Injury and Physical Therapy Content</h2>
+<p>The App’s injury-related exercise content is drawn from public informational athletic frameworks and is general in nature. <strong>It is not a medical diagnosis and not a rehabilitation prescription.</strong> The App cannot examine you, cannot confirm what injury you have, and cannot judge whether an exercise is safe for your specific injury at your specific stage of healing. Selecting an injury type or tracking recovery protocols in the App is not a diagnosis. This remains true no matter how detailed or adaptive the App’s injury-related plan adjustments become, because more responsive plan changes are still generated from the same self-reported information, not a clinical evaluation. Seek a licensed physician or physical therapist for actual injury management.</p>
+<h2 id="heart-rate-based-features">4.2 Heart-Rate-Based Features</h2>
+<p>If the App offers heart-rate-based training guidance (such as a “Zone 2” feature), that guidance is calculated from heart-rate data supplied by your own wearable device or Apple Health, using zone estimates you or standard formulas provide. <strong>Consumer wrist and chest sensors can be inaccurate</strong>, and zone estimates are general approximations, not a clinical assessment of your cardiovascular condition. Do not use heart-rate guidance in the App as a substitute for medical evaluation of your cardiovascular health, and stop immediately and seek medical attention for any of the warning signs in Section 4. If you have a diagnosed or suspected cardiac condition, get clearance from your physician before you use any heart-rate guidance in the App, consistent with Section 4.</p>
+<h2 id="assumption-of-risk">5. Assumption of Risk</h2>
+<p><strong>Endurance training is inherently rigorous and carries physical risks.</strong> You understand and voluntarily accept the risks, which include but are not limited to: muscle strains and tears; tendon, ligament, and joint injury; stress fractures; overuse injury; heat illness and hypothermia; dehydration; cardiac events, including heart attack, cardiac arrest, and death; collisions with vehicles, cyclists, pedestrians, or animals; falls on uneven, wet, icy, or dark terrain; and assault or other criminal acts while training in public spaces.</p>
+<p><strong>You train at your own risk.</strong> You are solely responsible for deciding whether any workout is appropriate for you on any given day, for your own physical condition, for your surroundings, and for your own safety.</p>
+<h2 id="situational-awareness-and-environmental-safety">5.1 Situational Awareness and Environmental Safety</h2>
+<p>The App may show routes, pacing metrics, or prompts that demand your visual attention, and may play <strong>audio cues</strong> during a run, for example, run/walk interval transitions, countdowns, or pacer/sweeper alerts. <strong>These can distract you from your surroundings</strong>, whether delivered visually or audibly.</p>
+<p>You are responsible for remaining fully aware of traffic, terrain, weather, and other hazards at all times. Do not look at your phone while actively moving through road intersections or hazardous footing environments. Consider running with only one earbud in, or at a volume that still lets you hear traffic and your surroundings. Obey all traffic laws.</p>
+<p>The pacing suggestions or templates display target estimates based on values you input. They do not know your immediate physical condition. <strong>Do not chase a pace or mileage target through sharp pain, physical symptoms, or unsafe conditions.</strong></p>
+<h2 id="pacer-sweeper-feature">5.2 Pacer / Sweeper Feature</h2>
+<p>If the App offers a “pacer” or “sweeper” feature (a virtual target you race against or that pursues you, with audio cues), it is a <strong>motivational tool only</strong>, based entirely on the pace and goal time you input. It does not know your physical condition, terrain, or surroundings, and it cannot tell you to slow down or stop. <strong>Do not push through pain, dizziness, chest discomfort, or exhaustion to keep pace with the pacer or sweeper, or to avoid being “caught.”</strong> Section 4’s medical warning signs apply with full force regardless of what the pacer is showing you. Before your first use of the pacer or sweeper, the App presents a one-time acknowledgment that the feature is a motivational estimate and that you stop for any warning sign in Section 4. A stop signal in the App overrides any pursuit prompt.</p>
+<h2 id="purchases-subscriptions-and-refunds">6. Purchases, Subscriptions, and Refunds</h2>
+<p><strong>Free trial and core app purchase.</strong> ICDHT is free to download. On first launch, you will be shown the App’s core features and offered a <strong>7-day free trial</strong>, tracked against your Apple ID account. During the trial, you have full access to the App at no charge, and you may stop using it at any time during the trial at no cost: <strong>the trial does not automatically charge you.</strong></p>
+<p><strong>At the end of the trial, you will be prompted to complete a one-time $9.99 purchase to keep using the App.</strong> This purchase requires your active confirmation (such as Face ID, Touch ID, or your Apple ID password) through Apple’s standard purchase flow, and it is never charged automatically or without your affirmative action. <strong>If you do not complete the purchase, the App’s features will no longer be accessible</strong> until you do. There is no free, limited, or read-only version of the App after an unpaid trial ends.</p>
+<p><strong>One trial per Apple ID.</strong> The trial is associated with your Apple ID account, not just with this installation. If you delete and reinstall the App, or install it on another device signed in with the same Apple ID, you will not receive an additional free trial; the App relies on Apple's trial-eligibility mechanism to recognize your account’s prior trial or purchase history and prompt for purchase accordingly.</p>
+<p><strong>Pro subscription.</strong> We may separately offer an optional recurring <strong>Pro subscription</strong> at <strong>$3.99 per month</strong>, or <strong>$29.99 per year</strong> at a discounted annual rate, unlocking additional features, which may include: heart-rate-based (“Zone 2”) training; a pacer/sweeper feature with audio cues (see Section 5.2); expanded, more adaptable injury-adjustment guidance; weekly goal-setting; adaptive race-goal recommendations; and strength-training workout suggestions for runners. The Pro subscription is optional and separate from the one-time core-app purchase, and you can use the core app fully without it. Pro pricing may change, and any change will be disclosed in the App Store listing and, for existing subscribers, as required by Apple’s subscription terms.</p>
+<p><strong>All purchases and the trial are transactions between you and Apple</strong>, governed entirely by Apple’s media service terms, including trial eligibility, purchase confirmation, billing, and subscription renewal/cancellation. Apple, not us, handles payment processing. Manage your Apple ID purchase history or subscriptions through your device’s Apple ID account settings.</p>
+<p><strong>Refunds are handled by Apple, not by us.</strong> We have no access to payment architectures and cannot issue refunds. Request them directly through Apple.</p>
+<p><strong>Feature changes.</strong> Features may be added, changed, or removed, including which features require the one-time purchase versus the Pro subscription. We do not guarantee any specific layout or programmatic component will remain permanently available.</p>
+<h2 id="license">7. License</h2>
+<p>We grant you a limited, personal, non-exclusive, non-transferable, revocable license to use the App on Apple-branded devices you own or control, as permitted by the App Store Terms of Service, for your own personal, non-commercial use.</p>
+<p><strong>You may not:</strong> copy, modify, reverse engineer, decompile, or disassemble the App; rent, lease, lend, sell, sublicense, or redistribute it; remove proprietary notices; use it to build a competing product; or use it for commercial coaching services without our express written permission.</p>
+<h2 id="intellectual-property">8. Intellectual Property</h2>
+<p>The App and its contents, including the custom training-plan algorithm, exercise library, workout architecture, text, layout design, branding, and the name “I Can Do Hard Things,” are owned by us and protected by intellectual property law. These Terms grant you a license to use the App, not ownership of anything in it.</p>
+<p><strong>Your data is yours.</strong> The runs, plans, and entries stored on your device belong to you. We do not claim ownership of them, and we cannot access them.</p>
+<h2 id="third-party-services">9. Third-Party Services</h2>
+<p>The App may connect via API links to Strava, Apple HealthKit, RunSignup, and Open-Elevation. Where enabled, the App can both import your existing Strava activities and export runs you log in the App to your Strava account. <strong>We do not control these services and are not responsible for them</strong>, for their availability, data reliability, data security, or their handling of your data once it reaches them. Your use of them is governed by their own corporate terms and privacy policies.</p>
+<h2 id="accuracy-disclaimer">10. Accuracy Disclaimer</h2>
+<p>GPS distance, pace, elevation, route, calorie, and (where applicable) heart-rate-zone figures are <strong>estimates</strong> produced by consumer hardware and location/sensor services. They can be materially wrong, particularly in dense urban areas, under tree cover, indoors, and in poor weather, or where a wearable sensor loses contact or signal. Do not rely on them for any purpose where absolute precision matters, including medical, clinical, or official timing purposes.</p>
+<h2 id="disclaimer-of-warranties">11. Disclaimer of Warranties</h2>
+<p><strong>THE APP IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTY OF ANY KIND</strong>, express or implied, including any implied warranty of merchantability, fitness for a particular purpose, accuracy, or non-infringement.</p>
+<p>We do not warrant that the App will be uninterrupted, error-free, or secure; that any training plan will produce any specific competitive result; or that following the App’s guidance will improve your fitness or prevent athletic injury.</p>
+<h2 id="limitation-of-liability">12. Limitation of Liability</h2>
+<p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, I CAN DO HARD THINGS LLC AND ITS MEMBERS, MANAGERS, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY PERSONAL INJURY, ILLNESS, OR DEATH, ARISING OUT OF OR RELATED TO YOUR USE OF THE APP OR YOUR PARTICIPATION IN ANY ACTIVITY SUGGESTED BY IT</strong>, whether based in contract, tort, negligence, strict liability, or otherwise, even if we have been advised of the possibility of such damages.</p>
+<p><strong>OUR TOTAL AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS FOR ECONOMIC, CONTRACT, OR STATUTORY DAMAGES WILL NOT EXCEED THE GREATER OF THE TOTAL AMOUNTS YOU PAID I CAN DO HARD THINGS LLC IN THE TWELVE MONTHS BEFORE THE CLAIM AROSE OR ONE HUNDRED DOLLARS ($100.00). THE EXCLUSIONS AND LIMITS IN THIS SECTION APPLY TOGETHER WITH THE ASSUMPTION OF RISK IN SECTION 5 AND THE DISCLAIMERS IN SECTIONS 4 AND 11.</strong> Nothing in these Terms limits liability that cannot be limited or excluded by applicable law.</p>
+<h2 id="indemnification">13. Indemnification</h2>
+<p>You agree to defend, indemnify, and hold harmless I Can Do Hard Things LLC and its members, managers, and agents from any claim, damage, loss, or expense (including reasonable attorneys’ fees) arising from your use of the App, your violation of these Terms, or your violation of any third-party right.</p>
+<h2 id="termination">14. Termination</h2>
+<p>You may terminate these Terms at any time by deleting the App. We may suspend or terminate your license if you materially breach these Terms. Sections 4, 5, 6, 7, 8, and 10 through 17 survive termination.</p>
+<h2 id="changes-to-these-terms">15. Changes to These Terms</h2>
+<p>We may update these Terms. Material changes will be reflected in the “Last Updated” date and, where required, notified in the App. Continued use after changes take effect means you accept them. A material change to Section 16 does not apply to any dispute that arose before the change took effect, and I Can Do Hard Things LLC will give notice in the App before a material change to Section 16 takes effect.</p>
+<h2 id="governing-law-venue-and-dispute-resolution">16. Governing Law, Venue, and Dispute Resolution</h2>
+<p>These Terms, and all claims or disputes arising out of or relating to these Terms or your use of the App, are governed by and construed in accordance with the <strong>laws of the State of Florida</strong>, without regard to conflict-of-law rules. You agree that the exclusive venue for any dispute not subject to the arbitration provision below (or any action to enforce an arbitration award) will be the state or federal courts located in <strong>Duval County, Florida (Jacksonville)</strong>, and you consent to personal jurisdiction there.</p>
+<h2 id="judicial-forum-arbitration-and-jury-waiver">16.1 Judicial Forum, Arbitration, and Jury Waiver</h2>
+<p><strong>Binding arbitration.</strong> Except for disputes that qualify for small claims court, or claims for injunctive relief to protect our intellectual property, you and I Can Do Hard Things LLC agree that any dispute arising out of or relating to these Terms or your use of the App will be resolved by <strong>binding arbitration administered by the American Arbitration Association (AAA)</strong> under its Consumer Arbitration Rules then in effect, rather than in court, except as provided below. The AAA consumer fee schedule applies to any arbitration under this section. Your share of the filing and arbitrator fees is limited to the consumer amount that schedule sets, and I Can Do Hard Things LLC pays the balance. The Federal Arbitration Act governs the interpretation and enforcement of this arbitration agreement. Arbitration proceeds by document submission, by telephone, or by video, or, if an in-person hearing is held, in the federal judicial district where you live, consistent with the AAA Consumer Arbitration Rules. Before either side starts an arbitration, the party raising the dispute sends a written notice describing the claim and the relief sought to Support@icandohardthings.fit, and both sides then have 60 days to resolve the dispute before an arbitration is filed.</p>
+<p><strong>Class action waiver.</strong> You and I Can Do Hard Things LLC agree that any arbitration or proceeding will be conducted <strong>only on an individual basis and not in a class, consolidated, or representative action</strong>. The arbitrator may not consolidate more than one person’s claims and may not preside over any form of a class or representative proceeding. If a court finds the class action waiver unenforceable as to a dispute, the entire arbitration agreement is void as to that dispute and that dispute proceeds in court. Class arbitration is not permitted.</p>
+<p><strong>Jury trial waiver.</strong> To the fullest extent permitted by law, <strong>you and I Can Do Hard Things LLC each waive any right to a jury trial</strong> for any claim arising out of or relating to these Terms or your use of the App, whether heard in arbitration or in any court proceeding permitted under this section.</p>
+<p><strong>Opt-out.</strong> You may opt out of this arbitration agreement by sending written notice to Support@icandohardthings.fit within 30 days of first accepting these Terms, stating your intent to opt out of arbitration. If you opt out, disputes will instead proceed exclusively in the state or federal courts located in Duval County, Florida, as set out above, and the class action waiver and jury trial waiver in this section continue to apply to any such court proceeding to the fullest extent permitted by law.</p>
+<h2 id="general-provisions">17. General Provisions</h2>
+<p><strong>Severability.</strong> If any provision of these Terms is held unenforceable, that provision is limited or removed to the minimum extent necessary, and the rest of these Terms stay in full force and effect.</p>
+<p><strong>Assignment.</strong> I Can Do Hard Things LLC may assign these Terms, in whole or in part, to an affiliate or to a successor in a merger, acquisition, sale of assets, or other restructuring. You may not assign these Terms without the prior written consent of I Can Do Hard Things LLC, and any attempted assignment by you without that consent is void.</p>
+<p><strong>Entire agreement.</strong> These Terms, together with the ICDHT Privacy Policy and the ICDHT Consumer Health Data Privacy Policy, are the entire agreement between you and I Can Do Hard Things LLC about the App, and they replace any prior understanding about the App.</p>
   </div>
 
   <footer>
