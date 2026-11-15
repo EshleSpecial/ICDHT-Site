@@ -85,7 +85,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   <section class="legal-hero">
     <p class="eyebrow">Legal · Washington My Health My Data Act</p>
     <h1 class="doctitle">Consumer Health Data Privacy Policy</h1>
-    <p class="updated">Effective date: 09 August 2026 &nbsp;·&nbsp; Last updated: 09 August 2026 </p>
+    <p class="updated">Effective date: 09 August 2026 &nbsp;·&nbsp; Last updated: 14 November 2026 </p>
     <p class="entity-line">I Can Do Hard Things, LLC, a Florida limited liability company (&ldquo;ICDHT,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;).</p>
   </section>
  
@@ -140,8 +140,8 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 <tbody>
 <tr class="odd">
 <td><strong>Strava, Inc.</strong></td>
-<td><strong>Import:</strong> runs you recorded on Strava are read into the app. <strong>Export (planned, not yet built): once export ships and you enable it,</strong> runs you log inside ICDHT — distance, duration, pace, GPS route and coordinates, elevation — will be sent to your Strava account.</td>
-<td>Import occurs once you connect your Strava account. Export is planned and not yet built. Once it ships, export will occur only for runs you choose to send, or automatically if you turn that setting on. Your Strava authorization token is stored locally on your device and is never transmitted to us.</td>
+<td><strong>Import:</strong> runs you recorded on Strava are read into the app. <strong>Export:</strong> when you tap Share to Strava on a run, that run is sent to your Strava account. For a run with GPS, this is its route (latitude, longitude, time and elevation points), name and start time. For a run without GPS, it is the name, start time, duration and distance.</td>
+<td>Import occurs once you connect your Strava account. Export occurs only when you tap Share to Strava on a specific run. There is no automatic export. Who can see a shared run is set by your Strava privacy settings, not by ICDHT. Your Strava authorization token is stored locally on your device and is never transmitted to us.</td>
 </tr>
 <tr class="even">
 <td><strong>Apple, Inc. (HealthKit)</strong></td>
@@ -150,14 +150,19 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 </tr>
 <tr class="odd">
 <td><strong>Open-Elevation API</strong></td>
-<td>Geographic coordinates only (latitude and longitude), not linked to your name, account, or any identifier</td>
-<td>When elevation or terrain data is looked up for a race location or run route</td>
+<td>Geographic coordinates only (latitude and longitude) of a race's city, not linked to your name, account, or any identifier. Your own location is not sent.</td>
+<td>When you add a race from search, to look up the course's elevation and terrain</td>
 </tr>
 <tr class="even">
 <td><strong>RunSignup API</strong></td>
 <td>Your race search query, such as a race name or location. No health data and no user identifier is sent.</td>
 <td>When you search for a race during onboarding or plan setup</td>
 </tr>
+<tr class="odd">
+<td><strong>OpenStreetMap Nominatim</strong></td>
+<td>The city and state of a race you add from search. No health data, nothing from your profile, and no user identifier is sent.</td>
+<td>When you add a race from search, to find its approximate coordinates for the elevation lookup</td>
+</tr>  
 </tbody>
 </table>
 <p>No Consumer Health Data is shared with advertisers, data brokers, analytics companies, or any other commercial third party.</p>
